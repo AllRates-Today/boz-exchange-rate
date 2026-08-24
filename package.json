@@ -1,0 +1,54 @@
+{
+  "name": "boz-exchange-rate",
+  "version": "1.2.7",
+  "description": "Official Bank of Zambia (Zambia) daily exchange rates — 2 currencies vs ZMW, history since 2026. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "boz",
+    "bank",
+    "of",
+    "zambia",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "zmw",
+    "central-bank",
+    "official-rates",
+    "zambia",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/boz/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/boz-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/boz-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
