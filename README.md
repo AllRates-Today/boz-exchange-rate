@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'ZMW', { apiKey: 'art_live_...' });
 {
   bank: 'boz',
   name: 'Bank of Zambia',
-  rate_date: '2026-09-09',   // Bank of Zambia's own publication date
+  rate_date: '2026-09-25',   // Bank of Zambia's own publication date
   source: 'USD',
   target: 'ZMW',
-  rate: 19.2646,
+  rate: 19.5,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -113,11 +113,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'boz',
   name: 'Bank of Zambia',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-25',
   rates: [
-    { "base": "USD", "quote": "ZMW", "type": "middle", "value": 19.2646 },
-    { "base": "USD", "quote": "ZMW", "type": "sell", "value": 19.2896 },
-    { "base": "USD", "quote": "ZMW", "type": "buy", "value": 19.2396 },
+    { "base": "USD", "quote": "ZMW", "type": "middle", "value": 19.5 },
+    { "base": "USD", "quote": "ZMW", "type": "sell", "value": 19.525 },
+    { "base": "USD", "quote": "ZMW", "type": "buy", "value": 19.475 },
     // … the rest of the published table (2 currencies vs ZMW)
   ],
   disclaimer: '…'
@@ -157,7 +157,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'boz-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ZMW', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'USD', target: 'ZMW', from: '2026-01-01', to: '2026-09-25' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -170,11 +170,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'ZMW',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-25',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 19.2646, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-09-25', rate: 19.5, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
