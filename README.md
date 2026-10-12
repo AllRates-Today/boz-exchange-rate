@@ -40,16 +40,16 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Bank of Zambia table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-09** by Bank of Zambia — 6 rates. Updated 2026-10-09.
+Published **2026-10-12** by Bank of Zambia — 6 rates. Updated 2026-10-12.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| CNY | ZMW | buy | 2.9691 |
-| CNY | ZMW | middle | 2.9728 |
-| CNY | ZMW | sell | 2.9766 |
-| USD | ZMW | buy | 19.882 |
-| USD | ZMW | middle | 19.907 |
-| USD | ZMW | sell | 19.932 |
+| CNY | ZMW | buy | 2.9718 |
+| CNY | ZMW | middle | 2.9756 |
+| CNY | ZMW | sell | 2.9794 |
+| USD | ZMW | buy | 19.8904 |
+| USD | ZMW | middle | 19.9154 |
+| USD | ZMW | sell | 19.9404 |
 
 Source: [Official rates published by BOZ, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boz/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
