@@ -108,10 +108,10 @@ const pair = await getRate('USD', 'ZMW', { apiKey: 'art_live_...' });
 {
   bank: 'boz',
   name: 'Bank of Zambia',
-  rate_date: '2026-10-12',   // Bank of Zambia's own publication date
+  rate_date: '2026-10-14',   // Bank of Zambia's own publication date
   source: 'USD',
   target: 'ZMW',
-  rate: 19.9154,
+  rate: 19.9268,
   rate_type: 'middle',
   derived: false,
   method: 'published',
@@ -136,11 +136,11 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'boz',
   name: 'Bank of Zambia',
-  rate_date: '2026-10-12',
+  rate_date: '2026-10-14',
   rates: [
-    { "base": "USD", "quote": "ZMW", "type": "middle", "value": 19.9154 },
-    { "base": "USD", "quote": "ZMW", "type": "sell", "value": 19.9404 },
-    { "base": "USD", "quote": "ZMW", "type": "buy", "value": 19.8904 },
+    { "base": "USD", "quote": "ZMW", "type": "middle", "value": 19.9268 },
+    { "base": "USD", "quote": "ZMW", "type": "sell", "value": 19.9518 },
+    { "base": "USD", "quote": "ZMW", "type": "buy", "value": 19.9018 },
     // … the rest of the published table (2 currencies vs ZMW)
   ],
   disclaimer: '…'
@@ -180,7 +180,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'boz-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'ZMW', from: '2026-01-01', to: '2026-10-12' },
+  { source: 'USD', target: 'ZMW', from: '2026-01-01', to: '2026-10-14' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -193,11 +193,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'ZMW',
   from: '2026-01-01',
-  to: '2026-10-12',
+  to: '2026-10-14',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-12', rate: 19.9154, rate_type: 'middle', derived: false, method: 'published' },
+    { date: '2026-10-14', rate: 19.9268, rate_type: 'middle', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -316,9 +316,9 @@ getRate('USD', 'ZMW', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/boz.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/boz.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/boz/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/boz/latest.json`
 
 ## 🔗 Links
 
