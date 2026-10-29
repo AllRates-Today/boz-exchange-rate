@@ -47,16 +47,16 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by Bank of Zambia — 6 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by Bank of Zambia — 6 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| CNY | ZMW | buy | 3.0235 |
-| CNY | ZMW | middle | 3.0274 |
-| CNY | ZMW | sell | 3.0313 |
-| USD | ZMW | buy | 20.1538 |
-| USD | ZMW | middle | 20.1788 |
-| USD | ZMW | sell | 20.2038 |
+| CNY | ZMW | buy | 3.0315 |
+| CNY | ZMW | middle | 3.0359 |
+| CNY | ZMW | sell | 3.0403 |
+| USD | ZMW | buy | 20.1879 |
+| USD | ZMW | middle | 20.2129 |
+| USD | ZMW | sell | 20.2379 |
 
 </details>
 
@@ -223,6 +223,7 @@ The Bank of Zambia publishes buying, middle and selling rates for the kwacha aga
 
 - Publisher's own page: [Daily FX rates](https://www.boz.zm) · [www.boz.zm](https://www.boz.zm)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [Bank of Zambia rates page](https://allratestoday.com/central-bank-rates-api/boz/)
+- In the API: usually by **08:20 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
