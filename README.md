@@ -32,16 +32,16 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-09 by Bank of Zambia — 6 rates. Updated 2026-11-09.</summary>
+<summary>Table as text: published 2026-11-10 by Bank of Zambia — 6 rates. Updated 2026-11-10.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| CNY | ZMW | buy | 3.0435 |
-| CNY | ZMW | middle | 3.0473 |
-| CNY | ZMW | sell | 3.0511 |
-| USD | ZMW | buy | 20.3078 |
-| USD | ZMW | middle | 20.3328 |
-| USD | ZMW | sell | 20.3578 |
+| CNY | ZMW | buy | 3.0513 |
+| CNY | ZMW | middle | 3.0551 |
+| CNY | ZMW | sell | 3.0589 |
+| USD | ZMW | buy | 20.3439 |
+| USD | ZMW | middle | 20.3689 |
+| USD | ZMW | sell | 20.3939 |
 
 </details>
 
